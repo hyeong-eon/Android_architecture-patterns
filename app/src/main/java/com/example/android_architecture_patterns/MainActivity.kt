@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_architecture_patterns.databinding.ActivityMainBinding
 import com.example.android_architecture_patterns.mvc.MvcActivity
+import com.example.android_architecture_patterns.mvp.MvpActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openMvp(){
-
+        startActivity(Intent(this, MvpActivity::class.java))
     }
 
     fun openMvvm() {
