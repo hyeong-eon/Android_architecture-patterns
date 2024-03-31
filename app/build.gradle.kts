@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    // 바인딩 어뎁터
+    id("kotlin-kapt")
 }
 
 android {
@@ -57,4 +59,16 @@ dependencies {
 
     // coil
     implementation("io.coil-kt:coil:2.2.2")
+
+    // activity
+    implementation("androidx.activity:activity-ktx:1.8.2")
+
+    // livedata
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+
+    // RX
+    implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation("io.reactivex.rxjava2:rxkotlin:2.4.0")
+
 }
