@@ -14,4 +14,9 @@ interface ImageService {
     @Headers("Authorization: Client-ID JAflhQ1Vlc8sCISAEL6QQQdXikDfPd5N1UvvUCeqb5o")
     @GET("/photos/random")
     fun getRandomImageRx(): Single<ImageResponse>
+
+    // Mvi전용
+    @Headers("Authorization: Client-ID JAflhQ1Vlc8sCISAEL6QQQdXikDfPd5N1UvvUCeqb5o")
+    @GET("/photos/random")
+    fun getRandomImageSuspend(): ImageResponse
 }
